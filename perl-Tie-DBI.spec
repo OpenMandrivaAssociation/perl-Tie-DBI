@@ -15,6 +15,7 @@ Source:		http://www.cpan.org/modules/by-module/Tie/%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module allows you to tie Perl associative arrays (hashes) to SQL databases
