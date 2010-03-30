@@ -1,5 +1,5 @@
 %define	upstream_name	 Tie-DBI
-%define upstream_version 1.02
+%define upstream_version 1.03
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Tie hashes to DBI relational databases
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
@@ -36,7 +36,7 @@ retrieved.
 
 %install
 rm -rf %{buildroot} 
-%{makeinstall_std}
+%makeinstall_std
 
 %clean 
 rm -rf %{buildroot} 
