@@ -10,10 +10,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Tie/%{upstream_name}-%{upstream_version}.tar.gz
-
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
+BuildRequires:  perl(Test::More), perl(DBD::SQLite)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
@@ -28,7 +25,7 @@ retrieved.
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor CFLAGS="%{optflags}"
+%{__perl} Makefile.PL INSTALLDIRS=vendor
 %make 
 
 %check
