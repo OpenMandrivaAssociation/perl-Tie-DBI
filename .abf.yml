@@ -1,2 +1,4 @@
+removed_sources:
+  Tie-DBI-1.05.tar.gz: f949e34e29b0290f7489359ea00e332f88a8f907
 sources:
-  "Tie-DBI-1.05.tar.gz": f949e34e29b0290f7489359ea00e332f88a8f907
+  Tie-DBI-1.06.tar.gz: bddfa88a4f9628b8dc9fd67c8574c7846304cb22
