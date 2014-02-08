@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Release:	7
 
 Summary:	Tie hashes to DBI relational databases 
 License:	GPL+ or Artistic
