@@ -1,14 +1,14 @@
 %define	modname	Tie-DBI
-%define modver 1.06
+%define modver 1.08
 
 Summary:	Tie hashes to DBI relational databases 
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	8
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	http://www.cpan.org/modules/by-module/Tie/Tie-DBI-%{modver}.tar.gz
+Url:		http://wiki.github.com/toddr/Tie-DBI
+Source0:	https://cpan.metacpan.org/authors/id/T/TO/TODDR/Tie-DBI-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
