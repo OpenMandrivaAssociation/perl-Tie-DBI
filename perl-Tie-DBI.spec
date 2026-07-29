@@ -4,7 +4,7 @@
 Summary:	Tie hashes to DBI relational databases 
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://wiki.github.com/toddr/Tie-DBI
@@ -36,7 +36,7 @@ retrieved.
 %makeinstall_std
 
 %files
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/Tie
 %{_mandir}/man3/*
 
